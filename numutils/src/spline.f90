@@ -3,7 +3,7 @@ program spline_
   USE COMMON_VARS
   USE PARSE_CMD
   USE TOOLS
-  USE SPLINE
+  USE INTERPOLATE
   implicit none
   !
   integer              :: i,L,Lin,Lout,order,ncol

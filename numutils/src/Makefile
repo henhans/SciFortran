@@ -1,4 +1,4 @@
-DIREXE=../bin
+DIREXE=../../bin
 
 #LOAD SCIFOR LIBRARY:
 #======================================================
@@ -15,75 +15,75 @@ print2:
 
 random:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90  ${SFLIBS} -o $(DIREXE)/$@
 
 diagPAM:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  dfftpack.o $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  dfftpack.o $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 ffcmplx:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 pade:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 kdensity:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 histogram:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 fftgf:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 func:
 	@echo "============================$@======================================="
-	${FC} ${STD}  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@ -L/opt/local/lib -lmatheval
+	${FC} ${STD}  $@.f90    ${SFLIBS} -o $(DIREXE)/$@ -L/opt/local/lib -lmatheval
 
 deriv:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90   ${SFLIBS} -o $(DIREXE)/$@
 
 wmatsubara:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 arange:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 linspace:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 logspace:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 fermi:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 spline:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 numstat:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 splot:
 	@echo "============================$@======================================="
-	${FC} ${STD} -static  $@.f90   ${SFMODS} ${SFLIBS} -o $(DIREXE)/$@
+	${FC} ${STD} -static  $@.f90    ${SFLIBS} -o $(DIREXE)/$@
 
 vfplot:
 	@echo "============================$@======================================="
-	${FC} ${STD}  $@.f90   ${SFMODS} ${SFLIBS} ${DSL_LIBS} -o $(DIREXE)/$@
+	${FC} ${STD}  $@.f90    ${SFLIBS} ${DSL_LIBS} -o $(DIREXE)/$@
 
 
 clean: 
