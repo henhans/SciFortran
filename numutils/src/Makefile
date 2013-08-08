@@ -5,7 +5,7 @@ DIREXE=../../bin
 include sfmake.inc
 #======================================================
 
-all: print1 deriv kdensity numstat splot func wmatsubara fftgf arange pade logspace linspace fermi spline random histogram print2
+all: print1 deriv kdensity numstat splot wmatsubara fftgf arange pade logspace linspace fermi spline random histogram print2
 
 print1: 
 	@echo " ..................... compile: optimized .......................... "
