@@ -42,7 +42,7 @@ program plot_3d
        '  grid=[F]          -- if true write a file with continuous grid and data: X,Y,Z(X,Y)',&
        '  '])
   call parse_cmd_help(help_buffer)
-  call parse_cmd_variable(ncol,"NCOL","N",default=1)
+  call parse_cmd_variable(ncol,"NCOL",default=1)
   call parse_cmd_variable(nl,"NL",default=0)
   call parse_cmd_variable(file,"FILE",default="new.plot")
   call parse_cmd_variable(pgrid,"GRID",default=.false.)

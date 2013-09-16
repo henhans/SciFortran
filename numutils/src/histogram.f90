@@ -35,7 +35,7 @@ program histogram_
        '  '])
 
   call parse_cmd_help(help_buffer)
-  call parse_cmd_variable(n,"N","NBIN",default=50)
+  call parse_cmd_variable(n,"NBIN",default=50)
   call parse_cmd_variable(unit,"unit",default=6)
   do i=1,command_argument_count()
      cmd_var=get_cmd_variable(i)

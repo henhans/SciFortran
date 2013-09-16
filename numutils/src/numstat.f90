@@ -56,7 +56,7 @@ program numstat
        ' corr      -- correlation matrix of the ncol samples.',&
        '  '])
   call parse_cmd_help(help_buffer)
-  call parse_cmd_variable(ncol,"NCOL","N",default=1)
+  call parse_cmd_variable(ncol,"NCOL",default=1)
   do i=1,command_argument_count()
      cmd_var=get_cmd_variable(i)
      if(cmd_var%value=="mean") imean=.true.

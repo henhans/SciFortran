@@ -29,8 +29,8 @@ program linsp
   call parse_cmd_help(help_buffer)
 
   call parse_cmd_variable(L,"L",default=1024)
-  call parse_cmd_variable(wmin,"WMIN","A",default=-5.d0)
-  call parse_cmd_variable(wmax,"WMAX","B",default=5.d0)
+  call parse_cmd_variable(wmin,"WMIN",default=-5.d0)
+  call parse_cmd_variable(wmax,"WMAX",default=5.d0)
   do i=1,command_argument_count()
      nml_var=get_cmd_variable(i)
      if(nml_var%name=="RANGE")then

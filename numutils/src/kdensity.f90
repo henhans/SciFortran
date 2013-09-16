@@ -41,7 +41,7 @@ program kdensity
        '  '])
   call parse_cmd_help(help_buffer)
   call parse_cmd_variable(n,"N",default=1024)
-  call parse_cmd_variable(print_h,"PRINTH","GETH")
+  call parse_cmd_variable(print_h,"PRINTH")
   do i=1,command_argument_count()
      nml_var=get_cmd_variable(i)
      select case(nml_var%name)
