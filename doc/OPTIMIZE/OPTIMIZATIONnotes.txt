@@ -1,0 +1,44 @@
+some notes about OPTIMIZE module in SciFor.
+I'd like to implement things in a way very much similar to SciPy class .optmize
+
+Avoiding things too much complicated here we can divide things in two parts:
+
+- minimization routines:
+
+fmin_golden = uses golden section search for scalar function(NR code: golden)
+
+fmin        = downhill simplex algorithm (NR code: amoeba)
+ 
+fmin_brent  = Brent's simple algorithm for scalar function, no derivative (NR code: brent)
+
+fmin_dbrent = Brent's derivative algorithm for scalar function (NR code: dbrent) 
+
+fmin_powell = Powell's method(NR code: powell) 
+
+Xfmin_cg     = CG gradient minimisation (NR code: modified frprmn) [done]
+
+fmin_bfgs   = BFGS minimization algorithm Broyden-Fletcher-Goldfarb- Shanno variant of Davidon-Fletcher-Powell minimization. (NR code dfpmin)
+
+fmin_anneal = Annealing method to minimize a function (NR code: amebsa)
+
+leastsq     = minimisation of sum of squares of a set of equations (wrapper of Minpack lmdif and lmder)
+
+curve_fit   = uses non-linear least squares to fit a function against given data (wrapper of leastsq).
+
+
+
+- root-finding routines:
+
+Xfzero_brentq = find zero of scalar function in an interval [a,b] (NR code: zbrent) [done] (broaden)
+
+fzero_ridder = find zero of scalar function using Ridder's algorithm (NR code: zriddr)
+
+fzero_newton = find zero of scalar function using Newton-Raphson method (NR code: rtnewt)
+
+fzero_bisect = find zero of scalar function using Bisection (NR code: rbis)
+
+fzero_secant = find zero of scalar function using Secant method(NR code: rtsec)
+
+Xfzero_broyden= find zero of non-linear equations using Broyden method (NR code: broyden) [done] (broaden)
+
+Xfsolve       = find zero of non-linear equations using hybrd or hybrj (w/ or w/out Jacobian) from Minpack. [w/ done] 

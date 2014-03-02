@@ -1,0 +1,43 @@
+Notes for INTEGRATE and Ordinary Differential Equations solvers in SciFor.
+Some routines are already present. More to come from integration with intlib, quad-pack.
+
+Quadpack naming:
+
+Quadrature -> 	Non-adaptive	General integrand		S:Singularities handled
+	      	Adaptive	Weight function of some form	P:Specified points of local difficulties
+								I:Infinite interval
+								O:Oscillatory weight function (cos/sin) on finite interval
+								F:Fourier transform (cos/sin)
+								C:Cauchy principal value
+
+	
+Subdivision of the routines is:
+
+Integrating functions, given function object:
+
+quad       = compute definite integral of a given function (Quadpack generic interface: 
+QAGSe/QAGIe/QAGPe for no wighted functions - QAWOe/QAWFe/QAWSe/QAWCe).
+
+fixed_quad = compute integral using fixed order quadrature (polynomial interpolation plus QAWC) [done]
+
+romberg    = compute integral using Romberg adaptive method (NR code: qromb, qromo)
+
+
+Integrating functions, given fixed samples:
+
+traps      = cumulative integral using trapezoidal rule [done]
+
+simps      = cumulative integral using Simpson's rule [done]
+
+romb       = cumulative integral using Romberg rule (NR code gromb or IntLib)
+
+
+Integrators of ODE systems.
+
+odeint     = Integrate a system of ordinary differential equations (wrapper from lsoda from odepack.
+the form is dy/dt = f(t,y0,…)) 
+
+ode        = A more generic class of ODE solvers (net lib: vode.f / zvode.f  - odepack: lsoda - Runge-Kutta: RK4.5/ RK8(5.3))
+
+complex_ode= a complex functions interface.
+
