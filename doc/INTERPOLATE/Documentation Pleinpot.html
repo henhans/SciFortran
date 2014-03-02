@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Documentation Pleinpot</title>
+<meta name="description" content="Documentation Pleinpot">
+<meta name="keywords" content="README28">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta name="Generator" content="LaTeX2HTML v2002-2-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="Documentation%20Pleinpot_files/pleinpot.css">
+
+</head>
+
+<body>
+
+<table width="97%"><tbody><tr>
+<td align="left"><a href="http://leda.univ-lyon1.fr/pleinpot/introduction.html">Pleinpot introduction</a></td>
+<td align="left"><a href="http://leda.univ-lyon1.fr/pleinpot/manual_prog.html">Programmer's manual</a></td>
+<td align="left"><a href="http://leda.univ-lyon1.fr/pleinpot/manual_user.html">Users's manual</a></td>
+<td align="left"><a href="http://leda.univ-lyon1.fr/pleinpot/manual_install.html">Installation manual</a></td>
+</tr></tbody></table><hr>
+
+<h2><a name="SECTION00001000000000000000">
+Name</a>
+</h2>              dierckx
+
+<h2><a name="SECTION00002000000000000000">
+Purpose</a>
+</h2>           Spline approximation and interpolation functions
+
+<h2><a name="SECTION00003000000000000000">
+Author</a>
+</h2>             P. Dierckx
+
+<h2><a name="SECTION00004000000000000000">
+Description</a>
+</h2>
+  Set of functions constituting the "Fitpack" package.
+  http://www.netlib.org/dierckx/
+
+<p>
+FITPACK is a collection of FORTRAN programs for curve and surface fitting 
+  with splines and tensor product splines. 
+
+</p><p>
+Features included are automatic knot selection, error smoothing and data 
+  reduction. Besides the set of data points, the user merely has to provide a
+  single parameter, called the smoothing factor, to control the tradeoff 
+  between closeness of fit and smoothness of fit. Confidence limits for this 
+  parameter are available if the statistical errors on the data can be 
+  estimated.
+
+</p><p>
+In addition to a standard routine for curve fitting over an interval and 
+  a routine for fitting a bivariate spline function to a set of scattered 
+  data on a rectangular domain, there are special programs for smoothing 
+  periodic functions, parametric curves and surfaces, functions with 
+  convexity constraints. data over the sphere and other non-rectangular 
+  approximation domains. Very efficient surface fitting routines are provided
+  for applications with data given either on a rectangular, polar or 
+  spherical grid. Routines are included for evaluation, differentiation and 
+  integration of the spline approximations. FITPACK also contains an 
+  insertion algorithm and routines for calculating zeros and Fourier 
+  coefficients of cubic splines.
+
+</p><p>
+
+</p><h2><a name="SECTION00005000000000000000">
+Curve fitting routines</a>
+</h2>
+  curfit  - general curve fitting
+<br>
+percur  - curve fitting with periodic splines
+<br>
+parcur  - smoothing of parametric curves
+<br>
+clocur  - smoothing of closed curves
+<br>
+concur  - smoothing with end point derivative constraints
+<br>
+cocosp  - least-squares fitting with convexity constraints
+<br>
+concon  - automatic smoothing with convexity constraints
+<br>
+<p>
+
+</p><h2><a name="SECTION00006000000000000000">
+Curve application routines</a>
+</h2>
+  splev - evaluation of a spline function
+<br>
+splder - derivative calculation of a spline function
+<br>
+spalde  - all derivatives of a spline function
+<br>
+curev - evaluation of a spline curve
+<br>
+cualde - all derivatives of a spline curve
+<br>
+insert - inserting a knot into a given spline
+<br>
+splint - integration of a spline function
+<br>
+fourco - fourier coefficients of a cubic spline
+<br>
+sproot - the zeros of a cubic spline
+<br>
+<p>
+
+</p><h2><a name="SECTION00007000000000000000">
+Surface fitting routines</a>
+</h2>
+  surfit - surface fitting to scattered data
+<br>
+regrid - surface fitting to data on a rectangular grid
+<br>
+polar - surface fitting using generalized polar coordinates
+<br>
+pogrid - surface fitting to data on a polar grid
+<br>
+sphere - surface fitting using spherical coordinates
+<br>
+spgrid  - surface fitting to data on a spherical grid
+<br>
+parsur - parametric surface fitting to data on a grid
+<br>
+<p>
+
+</p><h2><a name="SECTION00008000000000000000">
+Surface application routines</a>
+</h2>
+  bispev - evaluation of a bivariate spline function
+<br>
+parder - partial derivatives of a bivariate spline
+<br>
+dblint - integration of a bivariate spline
+<br>
+profil - cross sections of a bivariate spline
+<br>
+evapol - evaluation of a polar spline
+<br>
+surev - evaluation of a parametric spline surface
+<br>
+<p>
+
+</p><h2><a name="SECTION00009000000000000000">.</a>
+
+</h2>
+
+<p>
+
+
+</p><h2><a name="SECTION000010000000000000000">
+See also</a>
+</h2>
+      <a name="tex2html1" href="http://leda.univ-lyon1.fr/pleinpot/README1.html">app</a> - Functions for data processing
+<br>
+FIT - Data fitting functions
+<br>
+
+<h2><a name="SECTION000011000000000000000">
+Dependencies</a>
+</h2>      None
+
+<h2><a name="SECTION000012000000000000000">
+Source file</a>
+</h2><tt> src/dierckx/README
+</tt>
+<hr><address>
+<table width="97%"><tbody><tr><td align="left"><a href="http://leda.univ-lyon1.fr/pleinpot/introduction.html">Pleinpot documentation </a></td><td align="right">(Tue Dec 18 22:20:37 CET 2012
+)</td></tr></tbody></table>
+</address>
+
+
+</body></html>

@@ -1,0 +1,4 @@
+there is an error in OPTIMIZE_ROOT_FINDING which uses +hybrd1 from
+   MINPACK but this routine is not included in the scifor library.
+So if you compile also against MINPACK you're safe, otherwise you get
+   an error at compile time. TO FIX
